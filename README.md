@@ -1,5 +1,13 @@
 # Moxie Design System
 
+## Packages
+| Package name | Description | NPM |
+| :------ | :---------- | :---------- |
+| [@moxie-design/react](packages/react/) | React components with styles. | https://www.npmjs.com/package/@moxie-design/react |
+| [@moxie-design/styles](packages/styles/)  | CSS styles for components | https://www.npmjs.com/package/@moxie-design/styles |
+| [@moxie-design/web-components](packages/web-components/) | Framework agnostic web components | https://www.npmjs.com/package/@moxie-design/web-components |
+
+
 ## File Structure Overview
 ```
 .
@@ -18,11 +26,7 @@
 | tools/ | Scripts that manage, build or maintain the project itself. |
 | utilities/ | Reusable helper code that’s not tied to a specific package/library. |
 
-<br/>
 
----
-
-<br/>
 
 ## Project Documentation
 
