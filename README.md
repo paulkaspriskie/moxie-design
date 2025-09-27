@@ -7,6 +7,11 @@
 | [@moxie-design/styles](packages/styles/)  | CSS styles for components | https://www.npmjs.com/package/@moxie-design/styles |
 | [@moxie-design/web-components](packages/web-components/) | Framework agnostic web components | https://www.npmjs.com/package/@moxie-design/web-components |
 
+<br/>
+
+---
+
+<br/>
 
 ## File Structure Overview
 ```
@@ -26,7 +31,11 @@
 | tools/ | Scripts that manage, build or maintain the project itself. |
 | utilities/ | Reusable helper code that’s not tied to a specific package/library. |
 
+<br/>
 
+---
+
+<br/>
 
 ## Project Documentation
 
