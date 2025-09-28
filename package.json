@@ -6,6 +6,9 @@
   "directories": {
     "doc": "docs"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/paulkaspriskie/moxie-design/issues"
   },
-  "homepage": "https://github.com/paulkaspriskie/moxie-design#readme"
+  "homepage": "https://github.com/paulkaspriskie/moxie-design#readme",
+  "devDependencies": {
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "react": "^19.1.1",
+    "typescript": "^5.9.2"
+  }
 }
