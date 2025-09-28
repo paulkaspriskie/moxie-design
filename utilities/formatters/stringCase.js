@@ -5,13 +5,13 @@
  * @returns {string} the input value converted to camel case.
  */
 const formatCamelCase = (input) => {
-	if (/^[A-Z][a-zA-Z0-9]*$/.test(input)) {
-		return input[0].toLowerCase() + input.slice(1);
-	}
+  if (/^[A-Z][a-zA-Z0-9]*$/.test(input)) {
+    return input[0].toLowerCase() + input.slice(1);
+  }
 
-	return input
-		.toLowerCase()
-		.replace(/[-_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''));
+  return input
+    .toLowerCase()
+    .replace(/[-_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''));
 };
 
 /**
@@ -21,10 +21,10 @@ const formatCamelCase = (input) => {
  * @returns {string} the input value converted to kebab case.
  */
 const formatKebabCase = (input) => {
-	return input
-		.replace(/([a-z0-9])([A-Z])/g, '$1-$2')
-		.replace(/[\s_]+/g, '-')
-		.toLowerCase();
+  return input
+    .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
+    .replace(/[\s_]+/g, '-')
+    .toLowerCase();
 };
 
 /**
@@ -34,17 +34,17 @@ const formatKebabCase = (input) => {
  * @returns {string} the input value converted to pascal case.
  */
 const formatPascalCase = (input) => {
-	return input
-		.replace(/([a-z0-9])([A-Z])/g, '$1 $2')
-		.replace(/[-_\s]+/g, ' ')
-		.split(' ')
-		.filter(Boolean)
-		.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-		.join('');
+  return input
+    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+    .replace(/[-_\s]+/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join('');
 };
 
 module.exports = {
-	formatCamelCase,
-	formatKebabCase,
-	formatPascalCase,
+  formatCamelCase,
+  formatKebabCase,
+  formatPascalCase,
 };
