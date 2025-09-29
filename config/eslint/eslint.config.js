@@ -1,8 +1,5 @@
-// config/eslint/eslint.config.js
 const js = require("@eslint/js");
-
 const prettier = require("eslint-config-prettier");
-
 const pluginPrettier = require("eslint-plugin-prettier");
 
 module.exports = [
@@ -17,10 +14,10 @@ module.exports = [
       "prettier/prettier": "error",
       "padding-line-between-statements": [
         "error",
-        { blankLine: "always", prev: "*", next: "return" },
-        { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
-        { blankLine: "always", prev: "*", next: "function" },
-        { blankLine: "always", prev: "*", next: "class" },
+        // { blankLine: "always", prev: "*", next: "return" },
+        // { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+        // { blankLine: "always", prev: "*", next: "function" },
+        // { blankLine: "always", prev: "*", next: "class" },
       ],
     },
   },
