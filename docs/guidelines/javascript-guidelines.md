@@ -42,7 +42,7 @@ Document javascript functions as follows:
  * @returns {number} the sum of a and b
  */
 function addNumbers(a, b, c) {
-  if (typeof c === 'undefined') {
+  if (typeof c === "undefined") {
     c = 0;
   }
   return a + b + c;

@@ -14,7 +14,6 @@ module.exports = [
       "prettier/prettier": "error",
       "padding-line-between-statements": [
         "error",
-        // { blankLine: "always", prev: "*", next: "return" },
         // { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
         // { blankLine: "always", prev: "*", next: "function" },
         // { blankLine: "always", prev: "*", next: "class" },
@@ -33,5 +32,8 @@ module.exports = [
         exports: "readonly",
       },
     },
+  },
+  {
+    ignores: ["**/node_modules/**", "**/dist/**"],
   },
 ];
