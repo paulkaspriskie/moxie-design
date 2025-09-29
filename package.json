@@ -10,7 +10,8 @@
     "packages/*"
   ],
   "scripts": {
-    "format": "prettier --config config/prettier/prettier.config.js --ignore-path config/prettier/.prettierignore --write ."
+    "format": "prettier --config config/prettier/prettier.config.js --ignore-path config/prettier/.prettierignore --write .",
+    "lint": "eslint --config config/eslint/eslint.config.js . --ext .js,.ts,.tsx --fix"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
   },
   "homepage": "https://github.com/paulkaspriskie/moxie-design#readme",
   "devDependencies": {
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "react": "^19.1.1",
