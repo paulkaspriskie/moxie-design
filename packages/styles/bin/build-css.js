@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 const postcss = require('postcss');
 
 const inputFile = path.resolve(__dirname, '../src/css/index.css');
@@ -15,7 +16,7 @@ if (!fs.existsSync(outputDir)) {
 
 fs.readFile(inputFile, (err, css) => {
   if (err) console.log(err);
-  postcss()
+  postcss([autoprefixer])
     .process(css, { from: inputFile, to: outputFile })
     .then(result => {
       console.log(result.css);
