@@ -25,13 +25,13 @@
 └── utilities
 ```
 
-| Directory  | Description                                                                 |
-| :--------- | :-------------------------------------------------------------------------- |
-| bin/       | Executable files not tied to a specific package/library.         |
-| config/    | shared configuration used across all packages and libraries.                |
-| docs/      | Centralized project documentation.                                          |
-| packages/  | All libraries that are published, versioned or to be consumed as a package. |
-| tools/     | Scripts that manage, build or maintain the project itself.                  |
+| Directory | Description                                                                 |
+| :-------- | :-------------------------------------------------------------------------- |
+| bin/      | Executable files not tied to a specific package/library.                    |
+| config/   | shared configuration used across all packages and libraries.                |
+| docs/     | Centralized project documentation.                                          |
+| packages/ | All libraries that are published, versioned or to be consumed as a package. |
+| tools/    | Scripts that manage, build or maintain the project itself.                  |
 
 <br/>
 
