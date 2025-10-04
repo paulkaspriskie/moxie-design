@@ -35,6 +35,19 @@ const inputOptions = {
         '**/*.spec.tsx',
         '**/*.stories.tsx'
       ]
+    }),
+    terser({
+      maxWorkers: 1,
+      compress: {
+        drop_console: true,
+        passes: 1
+      },
+      mangle: {
+        safari10: true
+      },
+      format: {
+        comments: false
+      }
     })
   ],
   external: ['react', 'react-dom']
