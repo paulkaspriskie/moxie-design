@@ -10,6 +10,7 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "npm run build --workspaces --if-present",
     "format": "prettier --config config/prettier/prettier.config.js --ignore-path config/prettier/.prettierignore --write .",
     "lint": "eslint --config config/eslint/eslint.config.js . --ext .js,.ts,.tsx",
     "lint:fix": "eslint --config config/eslint/eslint.config.js . --ext .js,.ts,.tsx --fix"
