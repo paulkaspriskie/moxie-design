@@ -13,12 +13,12 @@ if (!fs.existsSync(outputDir)) {
 }
 
 fs.readFile(inputFile, (err, css) => {
-  if (err) console.log(err);
+  err ? console.log(err) : console.log('🔨 Building: @moxie/css...'); 
   postcss([autoprefixer, cssnano])
     .process(css, { from: inputFile, to: outputFile })
     .then((result) => {
       fs.writeFile(outputFile, result.css, (err) => {
-        if (err) console.log(err);
+        err ? console.log(err) : console.log('🎉 Build completed successfully: @moxie/css!');
       });
     });
 });

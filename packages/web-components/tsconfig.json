@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "experimentalDecorators": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "importHelpers": false
   }
 }
