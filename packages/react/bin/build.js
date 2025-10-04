@@ -7,9 +7,20 @@ const typescript = require('@rollup/plugin-typescript');
 const { readFileSync } = require('fs');
 
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
-
 // Define output directory
 const outputDir = '../../dist/moxie-react';
+
+const babelConfig = {
+  babelrc: false,
+  exclude: ['node_modules/**'],
+  presets: [
+    '@babel/preset-env',
+    '@babel/preset-react',
+    '@babel/preset-typescript',
+  ],
+  babelHelpers: 'bundled',
+  extensions: ['.ts', '.tsx', '.js', '.jsx']
+}
 
 // Input options
 const inputOptions = {
@@ -36,6 +47,7 @@ const inputOptions = {
         '**/*.stories.tsx'
       ]
     }),
+    babel(babelConfig),
     terser({
       maxWorkers: 1,
       compress: {
