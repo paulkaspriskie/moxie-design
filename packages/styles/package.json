@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./bin/build-css.js",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build -o ../../dist/storybooks/moxie-styles"
   },
   "author": "Paul Kaspriskie",
   "license": "MIT",
